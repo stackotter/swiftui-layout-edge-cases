@@ -13,7 +13,7 @@ struct ScrollViewExample: View {
 
         ScrollView {
             Color.blue
-                .aspectRatio(contentMode: .fit)
+                .aspectRatio(contentMode: .fill)
         }
         .frame(width: 401, height: 400)
     }

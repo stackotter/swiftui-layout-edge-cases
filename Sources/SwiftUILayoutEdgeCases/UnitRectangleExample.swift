@@ -39,7 +39,7 @@ struct UnitRectangle: Shape {
     #endif
 }
 
-/// This isn't an edge case, it just helped my understand what was going on.
+/// This isn't an edge case, it just helped me understand what was going on.
 struct UnitRectangleExample: View {
     @State var spacerWidth: SliderValue = 300
 

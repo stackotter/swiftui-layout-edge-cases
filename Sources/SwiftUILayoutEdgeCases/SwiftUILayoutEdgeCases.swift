@@ -24,6 +24,12 @@ struct SwiftUILayoutEdgeCases: App {
 
     var body: some Scene {
         WindowGroup {
+            #if USE_SCUI
+                Text("Note: SwiftCrossUI doesn't behave correctly under these examples yet. I only included SwiftCrossUI support so that I can test for these as I fix up the layout system over the next few days.")
+                    .fixedSize(horizontal: false, vertical: true)
+                    .frame(width: 400)
+            #endif
+
             VStack {
                 #if USE_SCUI
                     Picker(of: EdgeCase.allCases, selection: $edgeCase)
