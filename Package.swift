@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 6.1
 
 import PackageDescription
 import Foundation
@@ -20,7 +20,7 @@ if ProcessInfo.processInfo.environment["USE_SCUI"] == "1" {
 
 let package = Package(
     name: "SwiftUILayoutEdgeCases",
-    platforms: [.macOS(.v13), .iOS(.v14), .tvOS(.v14)],
+    platforms: [.macOS(.v15), .iOS(.v14), .tvOS(.v14)],
     dependencies: [
         .package(url: "https://github.com/stackotter/swift-cross-ui", revision: "7406f229eb639a2a8f068d7a8eaa27fc7dab11fd"),
     ],
